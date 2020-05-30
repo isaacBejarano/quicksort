@@ -1,0 +1,26 @@
+{
+	"name": "quicksort",
+	"version": "1.0.0",
+	"description": "algorithm to sort arrays (javascript)",
+	"main": "quicksort.js",
+	"scripts": {
+		"test": "jest --coverage",
+		"test:watch": "jest --coverage --watchAll"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/isaacBejarano/quicksort.git"
+	},
+	"author": "Isaac Bejarano",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/isaacBejarano/quicksort/issues"
+	},
+	"homepage": "https://github.com/isaacBejarano/quicksort#readme",
+	"devDependencies": {
+		"jest": "^26.0.1"
+	},
+	"dependencies": {
+		"@types/jest": "^25.2.3"
+	}
+}
