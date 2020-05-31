@@ -1,8 +1,4 @@
-// 1. INPUT
-let BASE = [100]; // base case
-let ARR = [40, 30, 10, 50, 20]; // recursion
-
-// 2. ALGORITHM
+// ALGORITHM
 function quickSort(arr, order) {
 	let left = [];
 	let right = [];
@@ -27,16 +23,16 @@ function quickSort(arr, order) {
 	return output;
 }
 
-// 3. ARGUMENTS <= 1
-// quickSort(array [, DESC order])
-// quickSort(array [, Arg == true])
-// ASC default Arg == false
+// ARGUMENTS <= 1
+// quickSort(array [, Arg])
+// Arg === false --> ASC default
+// Arg === true  --> DESC
 
 // BASE CASE
-let baseCase = quickSort(BASE); // !Arg
+// let baseCase = quickSort(BASE); // !Arg
 
 // ASC
-let asc = quickSort(ARR); // !Arg
+// let asc = quickSort(ARR); // !Arg
 // let asc = quickSort(ARR, );
 // let asc = quickSort(ARR, false);
 // let asc = quickSort(ARR, 0);
@@ -45,13 +41,13 @@ let asc = quickSort(ARR); // !Arg
 // let asc = quickSort(ARR, undefined);
 
 // DESC
-let desc = quickSort(ARR, true);
+// let desc = quickSort(ARR, true);
 // let desc = quickSort(ARR, 1);
 // let desc = quickSort(ARR, " ");
 
-console.log(baseCase);
-console.log(asc);
-console.log(desc);
+// console.log(baseCase);
+// console.log(asc);
+// console.log(desc);
 
-// JEST / unit test
-module.exports = { quickSort };
+// TEST
+// module.exports = { quickSort }; // uncomment to test
