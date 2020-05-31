@@ -8,7 +8,7 @@ Sort arrays in ascendent or descendent order. It uses recursion.
 
 # Time
 
-O(log n)
+O(n log n)
 
 # Series
 
