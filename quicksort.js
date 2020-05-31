@@ -13,8 +13,8 @@ function quickSort(arr, order) {
 	if (arr.length < 2) output = arr;
 	else {
 		for (let i = 1; i < arr.length; i++) {
-			if (arr[i] < pivot) left.push(arr[i]);
-			else right.push(arr[i]);
+			if (arr[i] < pivot) left[left.length] = arr[i];
+			else right[right.length] = arr[i];
 		}
 
 		if (order) {
