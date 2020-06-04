@@ -1,22 +1,22 @@
 // ALGORITHM
 function quickSort(arr, order) {
-	let left = [];
-	let right = [];
-	let pivot = arr[0];
 	let output = [];
 
 	// IF "base case" ELSE "recursion"
 	if (arr.length < 2) output = arr;
 	else {
+		let pivot = arr[0];
+		let left = [];
+		let right = [];
 		for (let i = 1; i < arr.length; i++) {
 			if (arr[i] < pivot) left[left.length] = arr[i];
 			else right[right.length] = arr[i];
 		}
 
 		if (order) {
-			output = [...quickSort(right, order), pivot, ...quickSort(left, order)]; // DESC
+			output = quickSort(right, order).concat(pivot, quickSort(left, order)); // DESC
 		} else {
-			output = [...quickSort(left, order), pivot, ...quickSort(right, order)]; // ASC
+			output = quickSort(left, order).concat(pivot, quickSort(right, order)); // ASC
 		}
 	}
 
